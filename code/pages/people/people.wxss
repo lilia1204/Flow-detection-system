@@ -1,0 +1,62 @@
+.topBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20rpx auto 20rpx auto;
+}
+.checkBox{
+  margin: auto 10rpx auto 10rpx;
+}
+.checkBox_mg{
+  margin-left: 150rpx;
+}
+
+.video{
+  width: 700rpx;
+  margin: 40rpx auto 10rpx auto;
+  position: relative;
+  left: 25rpx;
+}
+
+.btnBox{
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 40rpx auto;
+}
+#btn{
+  width: 180rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 0;
+  margin: 0 20rpx 0 20rpx;
+  background-color: #41A9FE;
+  color: white;
+}
+
+.img{
+  width: 700rpx;
+  height: 400rpx;
+  margin: 0 25rpx 10rpx 25rpx;
+  padding: auto;
+}
+
+
+.tip{
+  width: 100%;
+  text-align: center;
+  font-size: 24rpx;
+}
+.bottomBox{
+  width: 90%;
+  margin: 20rpx auto 0 auto;
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+}
+.a{
+  width: 50%;
+}

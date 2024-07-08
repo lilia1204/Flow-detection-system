@@ -1,0 +1,17 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/people/people",     
+    "pages/setting/setting",    
+    "pages/car/car" 
+  ],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarBackgroundColor": "#41A9FE"
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

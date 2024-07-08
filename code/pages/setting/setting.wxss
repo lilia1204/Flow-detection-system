@@ -1,0 +1,52 @@
+page{
+  width: 100%;
+}
+.bg{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -0rpx;
+  z-index: -100;
+  opacity:35%;
+}
+.t_tips{
+  font-size: 24rpx;
+  width: 90%;
+  margin: 20rpx auto 40rpx auto;
+}
+.set{
+  margin: 0 auto 10rpx 38rpx;
+  color: #69CED6;
+  font-size: 34rpx;
+  font-weight: 700;
+}
+.box{
+  display: flex;
+  flex-direction:row;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+.title{
+  display: flex;
+}
+.in{
+  width: 130rpx;
+  text-align: center;
+  border-bottom: 1px gray solid;
+}
+.noborder{
+  border: none;
+}
+.explain{
+  width: 260rpx;
+  color: rgb(104, 104, 104);
+}
+#btn{
+  width: 300rpx;
+  height: 60rpx;
+  padding: 0;
+  line-height: 60rpx;
+  margin: 60rpx auto 80rpx auto;
+}

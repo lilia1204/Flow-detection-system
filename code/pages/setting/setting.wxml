@@ -1,0 +1,62 @@
+<!-- 背景图片 -->
+<image class="bg" src="../../image/bg2.jpg" mode="aspectFill" />
+
+<!-- 上方提示 -->
+<view class="t_tips">
+  (当达到某级别的阈值后，即会被认定为达到了该等级，点击可修改值，畅通阈值固定为0。阈值设定应为：轻度拥挤{{'<'}}中度拥挤{{'<'}}严重拥挤) 
+</view>
+
+
+<view class="set">车流量阈值设置</view>
+
+<!-- 通畅时的车辆阈值显示 -->
+<view class="box">
+  <view class="title">
+    <text decode="{{true}}">畅&emsp;&emsp;通：</text>
+    <view class="in noborder">0</view>
+  </view>
+  <view class="explain"><text>0-{{car_lev[0]-1}}为畅通</text></view>
+</view>
+
+<!-- 设置车辆各个拥挤程度的阈值 -->
+<view wx:for="{{name}}" class="box">
+  <view class="title">
+    <text decode="{{true}}">{{item}}：</text>
+    <input value="{{car_lev[index]}}" data-index="{{index}}" bindinput="carInput" class="in" type="text" />
+  </view>
+
+  <view class="explain">
+    <text wx:if="{{index!=2}}">{{car_lev[index]}}-{{car_lev[index+1]-1}}为{{item}}</text>
+    <text wx:else>>={{car_lev[index]}}为{{item}}</text>
+  </view>
+</view>
+<!-- 修改按钮 -->
+<button bind:tap="setCar" id="btn" type="primary">确认修改</button>
+
+
+<view class="set">人流量阈值设置</view>
+
+<!-- 通畅时的人流量阈值显示 -->
+<view class="box">
+  <view class="title">
+    <text decode="{{true}}">畅&emsp;&emsp;通：</text>
+    <view class="in noborder">0</view>
+  </view>
+  <view class="explain"><text>0-{{peo_lev[0]-1}}为畅通</text></view>
+</view>
+
+<!-- 设置人流量各个拥挤程度的阈值 -->
+<view wx:for="{{name}}" class="box">
+  <view class="title">
+    <text decode="{{true}}">{{item}}：</text>
+    <input value="{{peo_lev[index]}}" data-index="{{index}}" bindinput="peoInput" class="in" type="text" />
+  </view>
+
+  <view class="explain">
+    <text wx:if="{{index!=2}}">{{peo_lev[index]}}-{{peo_lev[index+1]-1}}为{{item}}</text>
+    <text wx:else>>={{peo_lev[index]}}为{{item}}</text>
+  </view>
+</view>
+
+<!-- 修改按钮 -->
+<button bind:tap="setPeo" id="btn" type="primary">确认修改</button>

@@ -1,0 +1,24 @@
+<!-- 视频播放区域 -->
+<video class="video" controls="{{false}}" show-progress="{{true}}"  enable-progress-gesture="{{ true }}" 	show-center-play-btn="{{false}}"  id="video" src="{{video_info.url}}"></video>
+
+
+<!-- 三个事件按钮 -->
+<view class="btnBox">
+  <button id="btn" bindtap="setVideo">上传视频</button>
+  <button id="btn" bind:tap="monitor">开始检测</button>
+  <button id="btn" bind:tap="stop">暂停检测</button>
+</view>
+
+<!-- 通过画布展示抽取的帧图像+处理 -->
+<canvas class="canvas"  type="2d" id='cvs1'></canvas>
+<view class="tip">抽取帧图像并检测</view>
+
+<!-- 检测后的结论 -->
+<view class="bottomBox">
+  <view class="a" >
+    拥挤程度：<text style="{{color}}">{{lev}}</text>
+  </view>
+  <view class="a">
+    车辆数：{{num}}
+  </view>
+</view>

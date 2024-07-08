@@ -1,0 +1,27 @@
+<!-- 视频播放区域 -->
+<video class="video" controls="{{false}}" show-progress="{{true}}"  enable-progress-gesture="{{ true }}" 	show-center-play-btn="{{false}}" id="video" src="{{video_info.url}}"></video>
+
+<!-- 三个事件按钮 -->
+<view class="btnBox">
+  <button id="btn" bind:tap="chooseVideo">上传视频</button>
+  <button id="btn" bind:tap="monitor">开始检测</button>
+  <button id="btn" bind:tap="stop">暂停检测</button>
+</view>
+
+
+<!-- 使用画布抽帧，但不展示画布，处理结果使用图像标签展示 -->
+<canvas style="display: none;"   type="2d" id='cvs1'></canvas>
+<image src="{{base64}}" class="img" mode="aspectFit"/>
+<view class="tip">抽取帧图像并检测</view>
+<view class="tip">(检测到的路人头上使用红点标记)</view>
+
+
+<!-- 检测后的结论 -->
+<view class="bottomBox">
+  <view class="a" >
+    拥挤程度：<text style="{{color}}">{{lev}}</text>
+  </view>
+  <view class="a">
+    人数：{{num}}
+  </view>
+</view>

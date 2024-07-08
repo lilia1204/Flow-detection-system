@@ -1,0 +1,23 @@
+<!--pages/index/index.wxml-->
+<!-- 设置背景图片 -->
+<image class="bg" src="../../image/bg3.jpg" mode="aspectFill"/>
+
+<!-- 系统名称 -->
+<view class="title">人流量车流量</view>
+<view class="title">检测系统</view>
+
+<!-- 三个选项 -->
+<view class="box box_margin_top" bind:tap="to_car">
+  <image class="img" src="../../image/car.png" mode="aspectFit"/>
+  <view class="txt">车辆流量检测</view>
+</view>
+
+<view class="box" bind:tap="to_people">
+  <image class="img" src="../../image/peo.png" mode="aspectFit"/>
+  <view class="txt">人群流量检测</view>
+</view>
+
+<view class="box" bind:tap="to_setting">
+  <image class="img" src="../../image/setting.png" mode="aspectFit"/>
+  <view class="txt">设置阈值</view>
+</view>
