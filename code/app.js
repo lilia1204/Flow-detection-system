@@ -32,10 +32,10 @@ App({
   globalData: {
     access_token_car:'',
     access_token_peo:'',
-    appid_car:'wDLxNw7drrZ33zcJ5zITevnx',
-    secret_key_car:'MO0t8uiU9v0zRAwjx4uxxLYvOCW8fbEX',
-    appid_peo:'VO5MFRzq5aq6EmrLHTpD0dJZ',
-    secret_key_peo:'LBnFCV1KqGncWHCdgXJDitWiP6HDJlY6',
+    appid_car:'',//填写自己的人流量识别的百度智能云appid
+    secret_key_car:'',//请填写自己的百度智能云密钥
+    appid_peo:'',//填写自己的人流量识别的百度智能云appid
+    secret_key_peo:'',//请填写自己的百度智能云密钥
     car_lev:[1,10,12],
     peo_lev:[5,8,10],  
   }
